@@ -1,0 +1,85 @@
+body {
+  background: #1D9E96;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50pt;
+  padding-top: 10px;
+  margin-bottom: -5px;
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 14pt;
+}
+
+#message {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 15pt;
+  width: 33%;
+  border-bottom: 0.5px dotted white;
+  text-align: center;
+  padding: 5px;
+  background: #19867e;
+  border-radius: 3px;
+}
+
+table {
+
+  margin: 0 auto;
+  width: 354px;
+  height: 354px;
+  box-sizing: content-box;
+}
+.square {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+td:hover {background-color: #20b1a7}
+/*table {
+  border: none;
+}*/
+
+a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 5px;
+  width: 11%;
+  display: block;
+  text-align: center;
+  margin-left: 10px;
+}
+
+a:hover {
+  background-color: #20b1a7;
+}
+
+#github {
+  position: absolute;
+  right: 3px;
+  bottom: 2px;
+  vertical-align: text-top;
+  width: 6%;
+}
+
+
+
+img {
+  height: 17px;
+  width: 17px;
+  vertical-align: text-bottom;
+}
