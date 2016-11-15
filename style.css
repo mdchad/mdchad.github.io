@@ -48,9 +48,9 @@ body {
 
 .square {
   border: white 2px solid;
-  width:120px;
+  width:100px;
   height: 60px;
-  margin-left:39.5%;
+  margin-left:20vw;
   z-index: 1;
   background: white;
   animation: enlarge 2s ease 1s forwards normal;
@@ -181,7 +181,7 @@ span {
 .wrap {
   width: 100%;
   text-align :center;
-  margin-left: 11vw;
+  /*margin-left: 11vw;*/
   opacity: 0;
   animation: enter 1s ease 5s forwards;
   font-size: 27px;
@@ -200,12 +200,12 @@ span {
 
 .title{
   float:left;
-  margin: 5px 10px 20px 0;
+  /*margin: 5px 10px 20px 0;*/
 }
 
 .title2{
   float: left;
-  margin: 5px 10px;
+  /*margin: 5px 10px;*/
 }
 
 
@@ -216,8 +216,8 @@ span {
 	background: transparent;
 	border-radius: 60px;
   border: 5px solid;
-  border-left: 5px solid #0E4749;
-  border-right: 5px solid #0E4749;
+  border-left: 5px solid #00BFB2;
+  border-right: 5px solid #00BFB2;
   animation: spin 1s ease 3s infinite;
 }
 
