@@ -50,10 +50,29 @@ body {
   border: white 2px solid;
   width:100px;
   height: 60px;
-  margin-left:20vw;
+  margin-left:19.5vw;
   z-index: 1;
   background: white;
   animation: enlarge 2s ease 1s forwards normal;
+}
+
+@media (max-width:992px) {
+  .square {
+    margin-left:25vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .square {
+    margin-left: 40vw;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .square {
+    margin-left: 30vw;
+  }
 }
 
 @keyframes enlarge {
@@ -129,7 +148,7 @@ span {
   }
 
   10% {
-    color: #20DB3D;
+    color: #F4D35E;
   }
 
   20% {
@@ -138,7 +157,7 @@ span {
   }
 
   30% {
-    color: #AC3AD4;
+    color: #0D3B66;
 
   }
 
@@ -148,22 +167,22 @@ span {
   }
 
   50% {
-    color: #A510AC;
+    color: #FAF0CA;
 
   }
 
   60% {
-    color: #25C2F6;
+    color: #17BEBB;
 
   }
 
   70% {
-    color: #CA368B;
+    color: #2E282A;
 
   }
 
   80% {
-    color: #A3393C;
+    color: #9F8082;
 
   }
 
@@ -173,18 +192,42 @@ span {
   }
 
   100% {
-    color: #53F63E;
+    color: #C9CBA3;
 
   }
 }
 
 .wrap {
-  width: 100%;
+  /*width: 100%;*/
   text-align :center;
   /*margin-left: 11vw;*/
   opacity: 0;
   animation: enter 1s ease 5s forwards;
   font-size: 27px;
+}
+
+@media (min-width: 400px) {
+  .wrap {
+    margin-left: 23%;
+  }
+}
+
+@media (min-width: 470px) {
+  .wrap {
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    margin-left: 35%;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrap {
+    margin-left: 18%;
+  }
 }
 
 @keyframes enter{
@@ -205,21 +248,56 @@ span {
 
 .title2{
   float: left;
+  padding-left: 0.5vw;
   /*margin: 5px 10px;*/
 }
+
+@media (min-width: 992px){
+  .titlewrap {
+    width: 28% !important;
+  }
+}
+
 
 
 .circle {
 	width: 50px;
   float:left;
 	height: 50px;
+  margin-left: 0;
 	background: transparent;
 	border-radius: 60px;
   border: 5px solid;
-  border-left: 5px solid #00BFB2;
-  border-right: 5px solid #00BFB2;
+  border-left: 5px solid #0D3B66;
+  border-right: 5px solid #0D3B66;
   animation: spin 1s ease 3s infinite;
 }
+
+@media (max-width: 400px) {
+  .circle {
+    margin-left: 23%;
+  }
+}
+
+@media (min-width: 401px) {
+  .circle {
+    margin-left: 15%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .circle {
+    margin-left: 8%;
+  }
+}
+
+@media (min-width:992px) {
+  .circle {
+    margin-left: 0;
+  }
+}
+
 
 @keyframes spin {
   0% {
@@ -249,8 +327,9 @@ span {
   margin-top: 8%;
 }
 
-.skill-list {
+.item-list {
   list-style: none;
+  margin-top: 30px;
 }
 
 li {
@@ -263,4 +342,14 @@ li {
 li:hover{
   cursor: pointer;
   border: 1px solid white
+}
+
+.project {
+  height:150px;
+  background: #2A3D45;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 22px;
+  margin: 20px;
 }
