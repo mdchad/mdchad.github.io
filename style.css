@@ -206,7 +206,7 @@ span {
   font-size: 27px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .wrap {
     margin-left: 23%;
   }
