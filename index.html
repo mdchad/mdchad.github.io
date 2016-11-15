@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Irsyad</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="jquery.modal.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="style.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   </head>
@@ -98,15 +99,32 @@
       <h1>Projects</h1>
       <div class="col-md-10 col-md-offset-2 col-xs-12">
         <div class="item-list">
-          <div class="col-md-3 project">Take me to White House</div>
-          <div class="col-md-3 project">goodFactor</div>
-          <div class="col-md-3 project">Plannr</div>
-          <div class="col-md-3 project">Pitch</div>
-          <div class="col-md-3 project">React-translation</div>
+          <a href="#ex1" rel="modal:open"><div class="col-md-3 project">Take me to White House</div></a>
+          <a href="#ex1" rel="modal:open"><div class="col-md-3 project">goodFactor</div></a>
+          <a href="#ex1" rel="modal:open"><div class="col-md-3 project">Plannr</div></a>
+          <a href="#ex1" rel="modal:open"><div class="col-md-3 project">Pitch</div></a>
+          <a href="#ex1" rel="modal:open"><div class="col-md-3 project">React-translation</div></a>
         </div>
+      </div>
+      <div id="ex1" style="display:none;">
+        <h1></h1><p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+      </div>
+      <div id="ex2" style="display:none;">
+        <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+      </div>
+      <div id="ex3" style="display:none;">
+        <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+      </div>
+      <div id="ex4" style="display:none;">
+        <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+      </div>
+      <div id="ex5" style="display:none;">
+        <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
       </div>
     </div>
   </body>
   <script type="text/javascript" src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.min.js"></script>
+  <script src="jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
 </html>
