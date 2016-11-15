@@ -332,6 +332,7 @@ span {
   margin-top: 30px;
 }
 
+
 li {
   float: left;
   padding: 10px;
@@ -344,18 +345,22 @@ li:hover{
   border: 1px solid white
 }
 
+.project.first{
+  padding-top: 35px;
+}
+
 .project {
   height:150px;
   background: #2A3D45;
   color: white;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 55px;
   font-size: 25px;
   margin: 20px;
 }
 
 .tag {
-  background: #2A3D45;
+  background: #BF4342;
   border-radius: 10px;
   margin-right: 5px;
   margin-bottom: 10px;
