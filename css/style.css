@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Roboto';
 }
@@ -14,14 +15,13 @@ body {
   margin-top:180px;
   font-size: 55px;
  /* make things invisible upon start */
-	animation:fadeIn 4s ease-in 1;
-  -webkit-animation:fadeIn 4s ease-in 1;
-	animation-fill-mode: forwards;
+	animation:fadeIn 4s ease-in 1 forwards;
+  -webkit-animation:fadeIn 4s ease-in 1 forwards;
 }
 
 @keyframes fadeIn {
   0% {
-    transform:translateY(80px);
+    /*transform:translateY(80px);*/
     -webkit-transform:translateY(80px);
     opacity: 0;
   }
@@ -32,25 +32,25 @@ body {
   }
 
   40% {
-    transform:translateY(10px);
+    /*transform:translateY(10px);*/
     -webkit-transform:translateY(10px);
 
   }
 
   50% {
-    transform:translateY(10px);
+    /*transform:translateY(10px);*/
     -webkit-transform:translateY(10px);
 
   }
 
   60% {
-    transform:translateY(10px);
+    /*transform:translateY(10px);*/
     -webkit-transform:translateY(10px);
 
   }
 
   100% {
-    transform:translateY(-50px);
+    /*transform:translateY(-50px);*/
     -webkit-transform:translateY(-50px);
   }
 }
@@ -90,8 +90,8 @@ body {
   margin-left:19.5vw;
   z-index: 1;
   background: white;
+  /*animation: enlarge 2s ease 1s forwards normal;*/
   animation: enlarge 2s ease 1s forwards normal;
-  -webkit-animation: enlarge 2s ease 1s forwards normal;
 }
 
 
@@ -121,11 +121,12 @@ body {
 
   50%, 100%{
     height: 3px;
-    transform:scaleX(1);
+    -webkit-transform: scaleX(1);
+
   }
 
   100% {
-    transform:scaleX(3);
+    -webkit-transform: scaleX(3);
   }
 }
 
@@ -136,11 +137,12 @@ body {
 
   50%, 100%{
     height: 3px;
-    -webkit-transform:scaleX(1)
+    -webkit-transform:scaleX(1);
   }
 
   100% {
-    -webkit-transform:scaleX(3)
+    height: 3px;
+    -webkit-transform:scaleX(3);
   }
 }
 
@@ -511,12 +513,12 @@ li:hover{
 
 .mail {
   font-size: 30px;
-  color: #E0DFD5;
+  color: #9d9b7b;
   text-decoration: none;
 }
 
 .mail:hover {
-  color: #9d9b7b;
+  color: #E0DFD5;
   text-decoration: none;
 }
 
