@@ -536,3 +536,9 @@ i {
 .link-social:hover {
   color: #9d9b7b;
 }
+
+.copyright {
+  font-size: 10px;
+  font-weight: 300;
+  margin-top: 20px;
+}
