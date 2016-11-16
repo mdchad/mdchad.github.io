@@ -359,6 +359,21 @@ li:hover{
   margin: 20px;
 }
 
+.projectmodal{
+  text-align: justify;
+}
+
+.linkcaption {
+  text-decoration: none;
+  color: #686868;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.linkcaption:hover{
+  text-decoration: none;
+}
+
 .tag {
   background: #BF4342;
   border-radius: 10px;
