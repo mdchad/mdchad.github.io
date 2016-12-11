@@ -339,18 +339,110 @@ span {
 .title{
   float:left;
   /*margin: 5px 10px 20px 0;*/
+  margin-top: 13%;
 }
 
 .title2{
   float: left;
   padding-left: 0.5vw;
   /*margin: 5px 10px;*/
+  margin-top: 11%;
+}
+
+@media (max-width: 992px){
+  .title2{
+    margin-top: 0;
+  }
+
+  .title{
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 992px){
   .titlewrap {
     width: 28% !important;
   }
+}
+
+.round{
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid #E0DFD5;
+}
+
+.one{
+  animation: blink 1s ease infinite forwards;
+  width: 70px;
+  height: 70px;
+}
+
+.two {
+  animation: blink1 1s ease infinite forwards;
+  height: 50px;
+  width: 50px;
+}
+
+.third{
+  animation: blink2 1s ease infinite forwards;
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes blink {
+  0% {
+    border: 2px solid #E0DFD5;
+  }
+
+  33.3% {
+    border: 2px solid #E0DFD5;
+  }
+
+  66.7% {
+    border: 2px solid #E0DFD5;
+  }
+
+  100% {
+    border: 2px solid #8a8766;
+  }
+
+}
+
+@keyframes blink1 {
+   0% {
+    border: 2px solid #E0DFD5;
+  }
+
+  33% {
+    border: 2px solid #E0DFD5;
+  }
+
+  66.7% {
+    border: 2px solid #8a8766;
+  }
+
+  100% {
+    border: 2px solid #E0DFD5;
+  }
+}
+
+@keyframes blink2 {
+  0% {
+    border: 2px solid #E0DFD5;
+  }
+
+  33.3% {
+    border: 2px solid #8a8766;
+  }
+
+  66.7% {
+    border: 2px solid #E0DFD5;
+  }
+
+  100% {
+    border: 2px solid #E0DFD5;
+  }
+
 }
 
 
@@ -369,26 +461,26 @@ span {
 }
 
 @media (max-width: 400px) {
-  .circle {
-    margin-left: 26%;
+  .one {
+    margin-left: 22%;
   }
 }
 
 @media (min-width: 401px) {
-  .circle {
-    margin-left: 15%;
+  .one {
+    margin-left: 10%;
   }
 }
 
 
 @media (min-width: 768px) {
-  .circle {
+  .one {
     margin-left: 8%;
   }
 }
 
 @media (min-width:992px) {
-  .circle {
+  .one {
     margin-left: 0;
   }
 }
@@ -444,6 +536,7 @@ li:hover{
   padding-top: 35px;
 }
 
+
 .project {
   height:150px;
   background: #2A3D45;
@@ -453,6 +546,14 @@ li:hover{
   font-size: 25px;
   margin: 20px;
 }
+
+.project:hover {
+  background-color: #2A4645;
+}
+
+
+
+
 
 .projectmodal{
   text-align: justify;
@@ -508,7 +609,12 @@ li:hover{
   color: black;
   margin-top: 20px;
   margin-bottom: 30px;
-  border-radius: 2px;
+  border-radius: 4px;
+}
+
+.link-button:hover{
+  background-color: #9d9b7b;
+  color: #FFF;
 }
 
 .mail {
