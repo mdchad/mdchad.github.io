@@ -545,10 +545,13 @@ li:hover{
   padding-top: 55px;
   font-size: 25px;
   margin: 20px;
+  transition: transform 0.3s;
 }
 
 .project:hover {
   background-color: #2A4645;
+  transform: scale(1.1, 1.1);
+  box-shadow: 5px 5px 10px grey;
 }
 
 
