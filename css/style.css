@@ -545,13 +545,53 @@ li:hover{
   padding-top: 55px;
   font-size: 25px;
   margin: 20px;
+  cursor:pointer;
   transition: transform 0.3s;
+  position:relative;
+  /*border: 4px solid red;*/
 }
 
+.project:before, .project:after {
+  content: '';
+  border: 4px solid transparent;
+  width: 0;
+  height: 0;
+  position:absolute;
+}
+
+.project:before {
+  top: 0;
+  left: 0;
+}
+.project:after {
+  bottom: 0;
+  right: 0;
+}
+
+.project:hover:before, .project:hover:after {
+  width: 100%;
+  height: 100%;
+}
+.project:hover:before {
+  border-top-color: #9d9b7b;
+  border-right-color: #9d9b7b;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.project:hover:after {
+  border-bottom-color: #9d9b7b;
+  border-left-color: #9d9b7b;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+
+
 .project:hover {
-  background-color: #2A4645;
-  transform: scale(1.1, 1.1);
-  box-shadow: 5px 5px 10px grey;
+  /*background-color: #2A4645;*/
+  transform: scale(1.2, 1.2);
+  color: #E0DFD5;
+  /*box-shadow: 5px 5px 10px grey;*/
 }
 
 
